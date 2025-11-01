@@ -51,7 +51,7 @@ public class AplikasiFotoStudio {
                     int slot = scanner.nextInt();
                     scanner.nextLine();
                     daftarPaket.add(new PaketFoto(id, nama, harga, slot));
-                    System.out.println("✅ Paket berhasil ditambahkan!");
+                    System.out.println(" Paket berhasil ditambahkan!");
                 }
                 case 2 -> {
                     System.out.println("\n=== DAFTAR PAKET FOTO ===");
@@ -112,9 +112,9 @@ public class AplikasiFotoStudio {
             paketDipilih.kurangiSlot();
             user.tambahPaket(paketDipilih);
             riwayat.add(new RiwayatPembelian(user.getNama(), new ArrayList<>(java.util.List.of(paketDipilih)), paketDipilih.getHarga()));
-            System.out.println("✅ Booking berhasil!");
+            System.out.println(" Booking berhasil!");
         } else {
-            System.out.println("❌ Paket tidak ditemukan atau slot habis!");
+            System.out.println(" Paket tidak ditemukan atau slot habis!");
         }
     }
 }
