@@ -49,7 +49,7 @@ public void mulaiPembelian(Scanner scanner, User pembeli) {
 
             System.out.println("✅ " + paketDipilih.getNamaPaket() + " berhasil ditambahkan ke pesanan.");
         } else {
-            System.out.println("❌ Paket tidak ditemukan atau slot habis!");
+            System.out.println(" Paket tidak ditemukan atau slot habis!");
             i--; // Ulang input jika salah
         }
     }
@@ -67,9 +67,9 @@ public void mulaiPembelian(Scanner scanner, User pembeli) {
     int kembali = bayar - totalBayar;
 
     if (kembali < 0) {
-        System.out.println("❌ Uang Anda kurang Rp" + Math.abs(kembali));
+        System.out.println(" Uang Anda kurang Rp" + Math.abs(kembali));
     } else {
-        System.out.println("✅ Pembayaran berhasil! Kembalian: Rp" + kembali);
+        System.out.println(" Pembayaran berhasil! Kembalian: Rp" + kembali);
         System.out.println("Terima kasih sudah menggunakan jasa Foto Studio kami!");
     }
 }

@@ -37,7 +37,7 @@ public class Main {
             }
 
             if (!berhasilLogin) {
-                System.out.println("❌ Username / password salah!");
+                System.out.println(" Username / password salah!");
             }
         }
     }

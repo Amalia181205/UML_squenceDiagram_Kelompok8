@@ -29,7 +29,7 @@ public class Pembatalan {
             System.out.print("Alasan pembatalan: ");
             String alasan = scanner.nextLine();
 
-            System.out.println("❌ Pesanan " + dibatalkan.getNamaPaket() + " dibatalkan. Alasan: " + alasan);
+            System.out.println(" Pesanan " + dibatalkan.getNamaPaket() + " dibatalkan. Alasan: " + alasan);
             riwayat.add(new RiwayatPembelian(user.getNama(), new ArrayList<>(), 0, alasan));
         } else {
             System.out.println("Pilihan tidak valid!");
