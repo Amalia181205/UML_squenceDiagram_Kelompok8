@@ -47,7 +47,7 @@ public void mulaiPembelian(Scanner scanner, User pembeli) {
             RiwayatPembelian riwayat = new RiwayatPembelian(pembeli, paketDipilih);
             riwayatPemesanan.add(riwayat);
 
-            System.out.println("✅ " + paketDipilih.getNamaPaket() + " berhasil ditambahkan ke pesanan.");
+            System.out.println( " mberhasil menambah "+ paketDipilih.getNamaPaket() + " ke pesanan.");
         } else {
             System.out.println(" Paket tidak ditemukan atau slot habis!");
             i--; // Ulang input jika salah
